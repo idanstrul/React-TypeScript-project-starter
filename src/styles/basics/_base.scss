@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: sans-serif;
+    // It's better not to touch the default text size
+    // from here in order to save a clear ratio for
+    // to use in all other places. In this way we
+    // remmember that the rem unit is 16px.
+    // If we want to change the default font size we
+    // can do it from the body.
+}
+
+img {
+    max-width: 100%;
+}
