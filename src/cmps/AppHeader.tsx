@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 export function AppHeader() {
   return (
     <header className="app-header">
@@ -5,16 +7,23 @@ export function AppHeader() {
       <nav className="main-nav">
         <ul className="clean-list">
           <li>
-            <a href="#">Link</a>
+            <NavLink end to="/">
+              Home
+            </NavLink>
           </li>
           <li>
-            <a href="#">Link</a>
+            <NavLink to="/about">About</NavLink>
           </li>
           <li>
-            <a href="#">Link</a>
+            <NavLink end to="/stay">
+              Stays
+            </NavLink>
           </li>
           <li>
-            <a href="#">Link</a>
+            <NavLink to="/stay/123">Stay Details</NavLink>
+          </li>
+          <li>
+            <NavLink to="/stay/edit/123">Stay Edit</NavLink>
           </li>
         </ul>
       </nav>
